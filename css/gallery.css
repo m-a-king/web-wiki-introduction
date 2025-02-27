@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gallery-container {
+    max-width: 600px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px ;
+}
+
+.gallery-grid .thumbnail {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.no-cutting-thumbnail {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: var(--page-paragraph-margin-y);
+
+}
+
+.thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-cutting-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.input-group {
+    display: flex;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.input-group input:first-child {
+    width: 50px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.input-group input:nth-child(2) {
+    flex: 1;
+    border: 1px solid #ccc;
+
+}
+
+.input-group button {
+    width: 40px;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.button-cancel {
+    background-color: cornflowerblue;
+}
+
+.comment-item {
+    display: flex;
+    align-items: center;
+}
+
+.comment-item .comment-author {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-item .comment-author img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.comment-item .comment-author span{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.comment-item .comment-content {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
